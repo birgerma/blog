@@ -17,11 +17,11 @@ Some comments from myself when following the guide:
   Its not underlined in the guide that one needs to configure the project with a Team ID, but if that is not correctly configured it will not be possible to login to the site.
   i.e, the following environment variables must be configured:
   ``
-  GITHUB_TOKEN=a4e23bfa16e20482f03e25e0881a10b53c09636f
-GITHUB_TEAM_ID=4217923
-GITHUB_CLIENT_ID=fd4c3ec345e96b471afc
-GITHUB_CLIENT_SECRET=85d1f83bf0e2cffaaf4bbe089ed140f795b4eef2
-GITHUB_ORG_NAME=paper_blog
+GITHUB_TOKEN=some-token
+GITHUB_TEAM_ID=123456
+GITHUB_CLIENT_ID=abcd-efgh-ijkl
+GITHUB_CLIENT_SECRET=the-client-secret
+GITHUB_ORG_NAME=name-of-organization
   ``
 
 I also had some initial issues with the build process, I can recomend looking att the logs from Heroku with the command ``heroku logs --tail -a {PROJECT_NAME}``. Using that I relized that I needed to specify the following line in my Procfile using in Heroku when starting the project:
