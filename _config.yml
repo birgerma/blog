@@ -27,6 +27,9 @@ url: "birgerma.github.io" # the base hostname & protocol for your site, e.g. htt
 # twitter_username: jekyllrb
 github_username:  birgerma
 
+navbar-links:
+  About Me: "about"
+
 # Build settings
 theme: minima
 plugins:
